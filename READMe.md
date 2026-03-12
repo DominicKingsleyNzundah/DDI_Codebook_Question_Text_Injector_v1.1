@@ -1,12 +1,12 @@
-# DDI Codebook Literal Question Injector v1.0
+# DDI_Codebook_Question_Text_Injector_v1.1
 
-An R script that automates the addition of literal questions for datasets being documented in the **Metadata Editor**. This tool significantly reduces manual entry effort — saving **more than 50%** of the time that would otherwise be spent manually entering literal questions.
+An R script that automates the addition of literal questions and AI powered pre/post question texts classification for datasets being documented in the **Metadata Editor**. This tool significantly reduces manual entry effort — saving **more than 50%** of the time that would otherwise be spent manually entering literal questions.
 
 ---
 
 ## Overview
 
-The script uses the R packages `readxl`, `xml2`, and `dplyr` to read and process a DDI Codebook–based XML file, then populates it with literal questions extracted from an XLS questionnaire.
+The script uses the R packages `readxl`, `xml2`, and `dplyr` to read and process a DDI Codebook–based XML file, then populates it with literal questions extracted from an XLS questionnaire.Uses a free AI model installed locally to classify whether question hints are pre/post question texts.
 
 ---
 
@@ -15,6 +15,7 @@ The script uses the R packages `readxl`, `xml2`, and `dplyr` to read and process
 - **R** — R software installed on your machine
 - **Literal question source** — An XLS file (e.g. an ODK questionnaire in `.xls` format)
 - **DDI Codebook XML file** — A codebook-based XML file containing the details about the dataset(s) of interest
+- **Ollama** — Installed on your machine with gemma3 running 
 
 ---
 
